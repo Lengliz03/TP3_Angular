@@ -1,0 +1,36 @@
+<div style="padding-top: 70px;">
+<div class="container">
+
+<table class="table table-bordered table-striped table-hover">  
+<thead>
+<tr>
+ <th class="text-center">ID</th>
+ <th class="text-center">Name</th>
+ <th class="text-center" colspan="2">option</th>
+</tr>
+</thead>
+
+<tbody>
+    <tr *ngFor="let cat of cats ">
+        <td>{{cat.id}}</td>
+        <td>{{cat.name}}</td>
+        <td>
+            <a class="btn btn-info" routerLink="/details/{{cat.id}}">
+                <i class="fa fa-eye"></i> View </a>
+        </td>
+        <td>
+                <a class="btn btn-info" routerLink="/cat-modif/{{cat.id}}">
+                    <i class="fa fa-pen"></i> modifier </a>
+        </td>
+    </tr>
+
+</tbody>
+</table>
+<app-cat-details></app-cat-details>
+</div>
+
+
+
+
+
+</div>

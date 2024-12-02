@@ -1,0 +1,21 @@
+<p>cat-details works!</p>
+
+
+
+
+<div class="card" style="background-color:whitesmoke">
+    <div class="card-body">
+<p><strong>ID :</strong>{{cat.id}} &nbsp;
+    <strong>name :</strong>{{cat.name}} &nbsp;
+    <strong>breed :</strong>{{cat.breed}} &nbsp;
+    <strong>country :</strong>{{cat.country}}</p>
+
+    </div>
+    
+   <div *ngIf="cat">
+    <h2>{{ cat.name }} Details</h2>
+    
+    
+  </div>
+  
+    </div>
